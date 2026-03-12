@@ -17,7 +17,6 @@ body {
   margin: 0;
 }
 
-/* IMPORTANTE: remove as regras do template do Vite que quebram layout */
 #root {
   max-width: none;
   margin: 0;

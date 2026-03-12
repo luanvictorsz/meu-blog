@@ -10,7 +10,7 @@ export default function About() {
           Trabalho com aplicações web (Angular + Primeng) e desenvolvimento de jogos (Unity/Godot/GameMaker). Busco código
           previsível, componentes reutilizáveis e pipelines simples.
         </p>
-        <p className="p dim">Ajuste este texto para: anos de experiência, empresas, nicho e foco atual.</p>
+        <p className="p dim">veja meus projetos em: <a>aeternuspoison.com</a></p>
         <div className="pillRow">
           <span className="pill">C#</span>
           <span className="pill">Angular</span>
