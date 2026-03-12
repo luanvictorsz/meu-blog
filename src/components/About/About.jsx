@@ -7,7 +7,7 @@ export default function About() {
       <div className="card">
         <h2 className="h2">Sobre</h2>
         <p className="p">
-          Trabalho com aplicações web (Angular + C#) e desenvolvimento de jogos (Unity/Godot/GameMaker). Busco código
+          Trabalho com aplicações web (Angular + Primeng) e desenvolvimento de jogos (Unity/Godot/GameMaker). Busco código
           previsível, componentes reutilizáveis e pipelines simples.
         </p>
         <p className="p dim">Ajuste este texto para: anos de experiência, empresas, nicho e foco atual.</p>

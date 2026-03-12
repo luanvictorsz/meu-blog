@@ -22,8 +22,8 @@ export default function Header({ onCopyEmail }) {
         <div className="brand">
           <span className="sigil" aria-hidden="true" />
           <div className="brandText">
-            <div className="name">AETERNUS</div>
-            <div className="role">C# • Angular • GameDev</div>
+            <div className="name">Luan Victor (AETERNUS)</div>
+            <div className="role">C Sharp • Angular/React • GameDev</div>
           </div>
         </div>
 
