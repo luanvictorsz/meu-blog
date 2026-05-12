@@ -1,5 +1,5 @@
 import './index.css'
-
+import aeternus from "./assets/images/aeternus.png"
 const newsItems = [
   {
     date: '12 maio 2026',
@@ -20,7 +20,7 @@ function App() {
     <div className="page">
       <div className="logo">
         <img
-          src="/images/Aeternus.png"
+          src={aeternus}
           alt="logo"
           onError={(e) => {
             e.target.style.display = 'none'
