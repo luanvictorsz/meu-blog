@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Chewy&family=Fredoka:wght@300;400;500&family=VT323&family=Gaegu&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  font-family: 'Gaegu', cursive;
+  color: #15345c;
+  overflow-x: hidden;
+  background-color: #c9e8f5;
+  background-image: url("/images/8291.jpg");
+  background-repeat: repeat;
+  background-size: 320px;
+  display: flex;
+  justify-content: center;
+  letter-spacing: 0.5px;
+}
+
+#root {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background: url('https://www.transparenttextures.com/patterns/fabric-of-squares.png');
+  opacity: 0.25;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.page {
+  width: min(920px, 95%);
+  position: relative;
+  z-index: 1;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+}
+
+.logo img {
+  width: min(900px, 100%);
+  height: auto;
+  display: block;
+}
+
+.logo-placeholder {
+  width: 100%;
+  padding: 32px 0 16px;
+  text-align: center;
+  font-family: 'Chewy', cursive;
+  font-size: clamp(32px, 8vw, 72px);
+  color: #ff2222;
+  text-shadow: 3px 3px 0 #ffb3b3, 5px 5px 0 rgba(0,0,0,0.1);
+  letter-spacing: 2px;
+}
+
+.board {
+  background: rgba(255, 255, 255, 0.92);
+  border: 12px solid #ff4242;
+  border-radius: 35px;
+  padding: clamp(16px, 3vw, 30px);
+  position: relative;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.board::before {
+  content: '';
+  position: absolute;
+  inset: -12px;
+  border: 8px dashed white;
+  border-radius: 45px;
+  pointer-events: none;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 22px;
+}
+
+.menu a {
+  text-decoration: none;
+  background: #fff;
+  border: 4px dashed #9cc9ff;
+  border-radius: 18px;
+  padding: 8px 14px;
+  color: #1d67d8;
+  font-family: 'Chewy', cursive;
+  font-size: clamp(14px, 2.2vw, 22px);
+  box-shadow: 0 5px 0 #cce4ff;
+  transition: 0.15s;
+}
+
+.menu a:hover {
+  transform: rotate(-2deg) scale(1.04);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.card {
+  background: #d9f2f6;
+  border-radius: 24px;
+  box-shadow: 0 8px 0 rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+}
+
+.card-title {
+  font-family: 'VT323', monospace;
+  font-size: clamp(28px, 3.5vw, 42px);
+  color: #ff2222;
+  padding: 16px 16px 8px;
+  margin: 0;
+}
+
+.card p {
+  font-size: clamp(16px, 2.2vw, 28px);
+  line-height: 1.6;
+  padding: 0 16px 16px;
+  margin: 0;
+}
+
+.news {
+  border-radius: 18px;
+  padding: clamp(10px, 2vw, 18px);
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  max-height: clamp(220px, 45vw, 340px);
+  overflow: auto;
+  scrollbar-width: thin;
+}
+
+.news-item {
+  background: #f6fbff;
+  border: 3px dashed #cde4ff;
+  border-radius: 16px;
+  padding: 12px;
+}
+
+.news-item h3 {
+  font-family: 'VT323', monospace;
+  color: #ff4242;
+  font-size: clamp(20px, 3vw, 32px);
+  margin-bottom: 6px;
+}
+
+.news-item p {
+  padding: 0;
+  font-size: clamp(14px, 2vw, 22px);
+  line-height: 1.5;
+}
+
+.footer {
+  text-align: center;
+  margin-top: 30px;
+  color: white;
+  font-family: 'Chewy', cursive;
+  font-size: clamp(18px, 3vw, 28px);
+  text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.2);
+  padding-bottom: 24px;
+}
+
+@media (max-width: 800px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}

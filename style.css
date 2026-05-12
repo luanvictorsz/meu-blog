@@ -4,6 +4,12 @@
   box-sizing:border-box;
 }
 
+#root {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
 html{
   scroll-behavior:smooth;
 }
@@ -11,7 +17,9 @@ html{
 body{
   min-height:100vh;
   margin:0;
-  font-family:'Fredoka', sans-serif;
+
+  font-family:'Gaegu', cursive;
+
   color:#15345c;
   overflow-x:hidden;
 
@@ -21,6 +29,8 @@ body{
 
   display:flex;
   justify-content:center;
+
+  letter-spacing:0.5px;
 }
 
 body::before{
