@@ -120,11 +120,38 @@ body::before{
 }
 
 .news{
-  background:#fff;
   border-radius:18px;
-  padding:14px;
-  max-height:280px;
+  padding:clamp(10px, 2vw, 18px);
+
+  display:flex;
+  flex-direction:column;
+  gap:14px;
+
+  max-height:clamp(220px, 45vw, 340px);
   overflow:auto;
+
+  scrollbar-width:thin;
+}
+
+.news-item{
+  background:#f6fbff;
+  border:3px dashed #cde4ff;
+  border-radius:16px;
+  padding:12px;
+}
+
+.news-item h3{
+  font-family:'VT323', monospace;
+  color:#ff4242;
+
+  font-size:clamp(20px, 3vw, 32px);
+  margin-bottom:6px;
+}
+
+.news-item p{
+  padding:0;
+  font-size:clamp(14px, 2vw, 22px);
+  line-height:1.5;
 }
 
 .footer{
