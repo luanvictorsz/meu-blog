@@ -1,6 +1,0 @@
-Substitua os arquivos placeholder por suas imagens reais:
-
-- Aeternus.png  → sua logo
-- 8291.jpg      → textura de fundo
-
-Depois de substituir, rode: npm run build
