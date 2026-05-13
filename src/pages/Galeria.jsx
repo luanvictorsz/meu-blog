@@ -1,13 +1,13 @@
 import { useState } from 'react'
-import aeternus from '../assets/images/aeternus.png'
+import aeternus from '../assets/images/projects/marionet_1.gif'
 
 const items = [
   {
     id: 1,
     src: aeternus,
-    title: 'Logo Aeternus Poison',
+    title: 'marionete_poison_1205.gif',
     date: 'maio 2026',
-    tags: ['logo', 'design'],
+    tags: ['creepy', 'design'],
   },
 ]
 
