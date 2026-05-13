@@ -6,8 +6,8 @@ import Notas from './pages/Notas.jsx'
 import Projetos from './pages/Projetos.jsx'
 import Galeria from './pages/Galeria.jsx'
 
-const pages = ['home', 'projetos', 'notas', 'galeria']
-const labels = { home: 'início', projetos: 'projetos', notas: 'notas', galeria: 'galeria' }
+const pages = ['home', 'projetos', 'galeria']
+const labels = { home: 'início', projetos: 'projetos', galeria: 'galeria'}
 
 function App() {
   const [page, setPage] = useState('home')
@@ -54,7 +54,7 @@ function App() {
 
         {page === 'home' && <Home onNavigate={setPage} />}
         {page === 'projetos' && <Projetos />}
-        {page === 'notas' && <Notas />}
+        {/* {page === 'notas' && <Notas />} */}
         {page === 'galeria' && <Galeria />}
       </div>
 
