@@ -1,4 +1,4 @@
-// import marcaPagina from "../assets/images/aeternus.png"
+import marcaPagina from "../assets/images/notas/marcaPaginas.jpg"
 
 export const notes = [
   {
@@ -11,8 +11,8 @@ export const notes = [
   },
   {
     date: '11 maio 2026',
-    text: 'imprimi um marca paginas de gatinho',
-    // image: marcaPagina
+    text: 'imprimi um marca paginas de gatinho.',
+    image: marcaPagina
   },
   {
     date: '08 maio 2026',
@@ -25,7 +25,7 @@ function Notas() {
     <div className="page-content">
       <div className="news">
         {notes.map((note) => (
-          <div className="news-item" key={note.id}>
+          <div className="news-item">
             <h3>{note.date}</h3>
 
             {note.image && (
