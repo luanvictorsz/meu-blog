@@ -11,7 +11,7 @@ export const notes = [
   },
   {
     date: '11 maio 2026',
-    text: 'imprimi um marca paginas de gatinho.',
+    text: 'imprimi um marca paginas de gatinho usando a impressora 3D.',
     image: marcaPagina
   },
   {
