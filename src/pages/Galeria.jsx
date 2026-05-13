@@ -5,7 +5,7 @@ const items = [
   {
     id: 1,
     src: aeternus,
-    title: 'marionete_poison_1205.gif',
+    title: 'marionete_poison_120526.gif',
     date: 'maio 2026',
     tags: ['creepy', 'design'],
   },
@@ -18,7 +18,7 @@ function Galeria() {
     <div className="page-content">
       {items.length === 0 ? (
         <div className="card" style={{ textAlign: 'center', padding: 40 }}>
-          <p>nenhuma imagem ainda... em breve! 🎨</p>
+          <p>nenhuma imagem ainda... em breve!</p>
         </div>
       ) : (
         <div
@@ -60,7 +60,7 @@ function Galeria() {
               <div style={{ display: 'flex', gap: 8, flexWrap: 'wrap' }}>
                 {selected.tags.map((t) => (
                   <span className="tag" key={t}>
-                    #{t}
+                    {t}
                   </span>
                 ))}
               </div>

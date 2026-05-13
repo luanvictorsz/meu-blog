@@ -1,7 +1,23 @@
-const notes = [
-  { id: 1, date: '12 maio 2026', text: 'Fiz o design no estilo marionete com Photoshop e After Effects.' },
-  { id: 2, date: '12 maio 2026', text: 'comecei esse site inspirado em colagem e sites antigos' },
-  { id: 3, date: '08 maio 2026', text: 'organizei minhas texturas, projetos e imagens antigas.' },
+// import marcaPagina from "../assets/images/aeternus.png"
+
+export const notes = [
+  {
+    date: '12 maio 2026',
+    text: 'Fiz o design no estilo marionete com Photoshop e After Effects.'
+  },
+  {
+    date: '12 maio 2026',
+    text: 'comecei esse site inspirado em colagem e sites antigos'
+  },
+  {
+    date: '11 maio 2026',
+    text: 'imprimi um marca paginas de gatinho',
+    // image: marcaPagina
+  },
+  {
+    date: '08 maio 2026',
+    text: 'organizei minhas texturas, projetos e imagens antigas.'
+  },
 ]
 
 function Notas() {
@@ -11,6 +27,20 @@ function Notas() {
         {notes.map((note) => (
           <div className="news-item" key={note.id}>
             <h3>{note.date}</h3>
+
+            {note.image && (
+              <img
+                src={note.image}
+                alt={note.text}
+                style={{
+                  width: '100%',
+                  maxWidth: '300px',
+                  borderRadius: '8px',
+                  marginBottom: '10px'
+                }}
+              />
+            )}
+
             <p>{note.text}</p>
           </div>
         ))}

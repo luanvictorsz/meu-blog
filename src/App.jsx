@@ -54,7 +54,7 @@ function App() {
 
         {page === 'home' && <Home onNavigate={setPage} />}
         {page === 'projetos' && <Projetos />}
-        {/* {page === 'notas' && <Notas />} */}
+        {page === 'notas' && <Notas />} 
         {page === 'galeria' && <Galeria />}
       </div>
 
