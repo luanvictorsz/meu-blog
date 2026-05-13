@@ -1,21 +1,24 @@
+import { useState } from 'react'
 import './index.css'
-import aeternus from "./assets/images/aeternus.png"
-const newsItems = [
-  {
-    date: '12 maio 2026',
-    text: 'comecei esse site inspirado em colagem e sites antigos ★',
-  },
-  {
-    date: '07 maio 2026',
-    text: 'desenhei novos personagens pro meu jogo lowpoly azul.',
-  },
-  {
-    date: '01 maio 2026',
-    text: 'organizei minhas texturas, scans e imagens antigas.',
-  },
-]
+import aeternus from './assets/images/aeternus.png'
+import Home from './pages/Home.jsx'
+import Notas from './pages/Notas.jsx'
+import Projetos from './pages/Projetos.jsx'
+import Galeria from './pages/Galeria.jsx'
+
+const pages = ['home', 'projetos', 'notas', 'galeria']
+const labels = { home: 'início', projetos: 'projetos', notas: 'notas', galeria: 'galeria' }
 
 function App() {
+  const [page, setPage] = useState('home')
+
+  const titles = {
+    home: null,
+    projetos: 'Projetos',
+    notas: 'Notas',
+    galeria: 'Galeria',
+  }
+
   return (
     <div className="page">
       <div className="logo">
@@ -32,32 +35,27 @@ function App() {
 
       <div className="board">
         <nav className="menu">
-          <a href="#">projetos</a>
-          <a href="#">Notas</a>
-          <a href="#">Galeria</a>
+          {pages.map((p) => (
+            <a
+              key={p}
+              href="#"
+              className={page === p ? 'active' : ''}
+              onClick={(e) => {
+                e.preventDefault()
+                setPage(p)
+              }}
+            >
+              {labels[p]}
+            </a>
+          ))}
         </nav>
 
-        <div className="grid">
-          <div className="card">
-            <div className="card-title">Bem vindo!!</div>
-            <p>
-              esse é meu diário digital, vou usar esse "blog" para registrar minhas
-              criações, ideias ou qualquer coisa que eu achar interessante.
-            </p>
-          </div>
+        {titles[page] && <div className="page-title">{titles[page]}</div>}
 
-          <div className="card">
-            <div className="card-title">Notas</div>
-            <div className="news">
-              {newsItems.map((item, i) => (
-                <div className="news-item" key={i}>
-                  <h3>{item.date}</h3>
-                  <p>{item.text}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
+        {page === 'home' && <Home onNavigate={setPage} />}
+        {page === 'projetos' && <Projetos />}
+        {page === 'notas' && <Notas />}
+        {page === 'galeria' && <Galeria />}
       </div>
 
       <div className="footer">all rights reserved © 2026</div>
