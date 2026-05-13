@@ -7,22 +7,6 @@ const projects = [
     description: 'esse site! blog pessoal inspirado em colagem e estética dos anos 2000.',
     status: 'em progresso',
   },
-  {
-    id: 2,
-    title: 'Marionete',
-    date: 'maio 2026',
-    tags: ['motion', 'photoshop'],
-    description: 'design no estilo marionete feito com Photoshop e After Effects.',
-    status: 'concluído',
-  },
-  {
-    id: 3,
-    title: 'Arquivo de Texturas',
-    date: 'maio 2026',
-    tags: ['organização', 'assets'],
-    description: 'organização de texturas, projetos e imagens antigas.',
-    status: 'concluído',
-  },
 ]
 
 const statusColor = {
