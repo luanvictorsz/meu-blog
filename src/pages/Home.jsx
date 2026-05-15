@@ -14,7 +14,7 @@ function Home({ onNavigate }) {
 
       <div className="card">
         <div className="card-title">
-          Notas
+          Notas irrelevantes
         </div>
 
         <div className="news">
