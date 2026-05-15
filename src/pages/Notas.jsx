@@ -2,6 +2,10 @@ import marcaPagina from "../assets/images/notas/marcaPaginas.jpg"
 
 export const notes = [
   {
+    date: '15 maio 2026',
+    text: 'comprei um nintendo switch lite desbloqueado... foi o impulso, não me arrependo'
+  },
+  {
     date: '13 maio 2026',
     text: 'Peguei meu notebook na assistencia técnica, ele estava com o teclado zoado.'
   },
