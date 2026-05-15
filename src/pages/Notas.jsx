@@ -2,6 +2,10 @@ import marcaPagina from "../assets/images/notas/marcaPaginas.jpg"
 
 export const notes = [
   {
+    date: '13 maio 2026',
+    text: 'Desenvolvi o "SearchPeople (SP)" no trabalho, ele consegue encontrar dados de pessoas com cadastro ativo do Cadúnico.'
+  },
+  {
     date: '12 maio 2026',
     text: 'Fiz o design no estilo marionete com Photoshop e After Effects.'
   },
