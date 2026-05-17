@@ -1,9 +1,11 @@
 import marcaPagina from "../assets/images/notas/marcaPaginas.jpg"
+import grogu from "../assets/images/notas/gorgu.jpg"
 
 export const notes = [
   {
     date: '16 maio 2026',
-    text: 'fiz um charmander e um Grogu (Bebe Yoda)'
+    text: 'fiz um charmander e um Grogu (Bebe Yoda)',
+    image: grogu
   },
   {
     date: '16 maio 2026',
