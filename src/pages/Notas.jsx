@@ -2,6 +2,14 @@ import marcaPagina from "../assets/images/notas/marcaPaginas.jpg"
 
 export const notes = [
   {
+    date: '16 maio 2026',
+    text: 'fiz um charmander e um Grogu (Bebe Yoda)'
+  },
+  {
+    date: '16 maio 2026',
+    text: 'entreguei uma das encomendas em 3D para uma cliente, canetinhas acrilicas chegaram e os projetos estão mais boniotinhos'
+  },
+  {
     date: '15 maio 2026',
     text: 'comprei um nintendo switch lite desbloqueado... foi o impulso, não me arrependo'
   },
