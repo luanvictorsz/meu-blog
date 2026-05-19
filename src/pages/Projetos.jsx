@@ -1,13 +1,14 @@
+import dinopedia from '../assets/images/projects/dinopedia.png'
+
 const projects = [
   {
     id: 1,
-    image:
-      'https://images.unsplash.com/photo-1542751110-97427bbecf20?q=80&w=1200&auto=format&fit=crop',
-    title: 'Pong Game',
+    image: dinopedia,
+    title: 'Dinopedia',
     date: 'maio 2026',
-    tags: ['web', 'Gamedev'],
+    tags: ['App Mobile', 'Curiosidades'],
     description:
-      'Um joguinho de pong simples com uma estética retrô e efeitos visuais experimentais.',
+      'um aplicativo para dispositivos moveis contendo informações sobre algus dinossauros, quero desenvolver uma api para ele em breve...',
     status: 'em progresso',
   },
 ]
