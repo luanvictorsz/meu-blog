@@ -1,4 +1,5 @@
 import dinopedia from '../assets/images/projects/dinopedia.png'
+import agendaV from '../assets/images/projects/agendaV.png'
 
 const projects = [
   {
@@ -10,6 +11,18 @@ const projects = [
     description:
       'um aplicativo para dispositivos moveis contendo informações sobre algus dinossauros, quero desenvolver uma api para ele em breve...',
     status: 'em progresso',
+    link: 'https://github.com/luanvictorsz/dinopedia',
+  },
+  {
+    id: 2,
+    image: agendaV,
+    title: 'Agenda-V',
+    date: 'maio 2026',
+    tags: ['App Mobile', 'Produtividade'],
+    description:
+      'é só um "to-do" genérico com um tema bonitinho',
+    status: 'concluído',
+    link: 'https://github.com/luanvictorsz/AgendaV',
   },
 ]
 
@@ -66,9 +79,14 @@ function Projetos() {
                 ))}
               </div>
 
-              <button className="project-button">
-                <a href='https://github.com/luanvictorsz/dinopedia'>Ver Projeto</a>
-              </button>
+              <a
+                href={p.link}
+                target="_blank"
+                rel="noreferrer"
+                className="project-button"
+              >
+                Ver Projeto
+              </a>
             </div>
           </div>
         ))}

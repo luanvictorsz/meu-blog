@@ -276,6 +276,14 @@ body::before {
 }
 
 .project-card {
+  width: 260px;
+  background: #ff4242;
+  border: 5px solid #ff4242;
+  border-radius: 14px;
+  overflow: hidden;
+  transition: 0.2s;
+  margin: 10px;
+
   display: flex;
   flex-direction: column;
 }
@@ -385,6 +393,7 @@ body::before {
   border-radius: 14px;
   overflow: hidden;
   transition: 0.2s;
+  margin: 10px;
 }
 
 .project-card:hover {
@@ -415,6 +424,9 @@ body::before {
 
 .project-content {
   padding: 12px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
 }
 
 .project-header {
@@ -466,6 +478,12 @@ body::before {
   font-size: 12px;
   cursor: pointer;
   transition: 0.2s;
+
+  margin-top: auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .project-button:hover {
