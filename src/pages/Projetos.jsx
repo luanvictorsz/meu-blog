@@ -9,7 +9,7 @@ const projects = [
     date: 'março 2026',
     tags: ['App Mobile', 'Curiosidades'],
     description:
-      'um aplicativo para dispositivos moveis contendo informações sobre algus dinossauros, quero desenvolver uma api para ele em breve...',
+      'um aplicativo para dispositivos moveis contendo informações sobre alguns dinossauros, quero desenvolver uma api para ele em breve...',
     status: 'em progresso',
     link: 'https://github.com/luanvictorsz/dinopedia',
   },
