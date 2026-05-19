@@ -6,7 +6,7 @@ const projects = [
     id: 1,
     image: dinopedia,
     title: 'Dinopedia',
-    date: 'maio 2026',
+    date: 'março 2026',
     tags: ['App Mobile', 'Curiosidades'],
     description:
       'um aplicativo para dispositivos moveis contendo informações sobre algus dinossauros, quero desenvolver uma api para ele em breve...',
