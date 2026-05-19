@@ -67,7 +67,7 @@ function Projetos() {
               </div>
 
               <button className="project-button">
-                Ver Projeto
+                <a href='https://github.com/luanvictorsz/dinopedia'>Ver Projeto</a>
               </button>
             </div>
           </div>
