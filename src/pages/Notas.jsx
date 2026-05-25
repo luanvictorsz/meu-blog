@@ -3,6 +3,11 @@ import grogu from "../assets/images/notas/grogu.jpg";
 
 export const notes = [
   {
+    id: 10,
+    data: "24 de maio 2026",
+    text: "imprimir cortadores com temática de halloween e fiz alguns biscoitos, ficaram mt bom (preciso lembrar de subir as fotos aqui)"
+  },
+  {
     id: 1,
     date: "16 maio 2026",
     text: "fiz um charmander e um Grogu (Bebe Yoda), o charmander vai ser pintado amanhã, meu irmão pintou o grogu hj",
