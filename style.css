@@ -4,7 +4,6 @@
   box-sizing:border-box;
 }
 
-
 html{
   scroll-behavior:smooth;
 }
@@ -173,3 +172,4 @@ body::before{
     grid-template-columns:1fr;
   }
 }
+
