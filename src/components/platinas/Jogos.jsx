@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import './platinas.css'
+import './Jogos.css'
 
 const jogos = [
   {
