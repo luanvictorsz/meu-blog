@@ -5,10 +5,10 @@ import Home from './pages/Home.jsx'
 import Notas from './pages/Notas.jsx'
 import Projetos from './pages/Projetos.jsx'
 import Galeria from './pages/Galeria.jsx'
-import Platinas from './components/platinas/Platinas.jsx'
+import Jogos from './components/platinas/Jogos.jsx'
 
-const pages = ['home', 'projetos', 'galeria', 'platinas']
-const labels = { home: 'início', projetos: 'projetos', galeria: 'galeria', platinas: 'platinas' }
+const pages = ['home', 'projetos', 'galeria', 'jogos']
+const labels = { home: 'início', projetos: 'projetos', galeria: 'galeria', jogos: 'jogos' }
 
 function App() {
   const [page, setPage] = useState('home')
@@ -19,7 +19,7 @@ function App() {
     projetos: 'Projetos',
     notas: 'Notas',
     galeria: 'Galeria',
-    platinas: 'Platinas',
+    jogos: 'Jogos',
   }
 
   const navegarPara = (p) => {
@@ -92,7 +92,7 @@ function App() {
         {page === 'projetos' && <Projetos />}
         {page === 'notas' && <Notas />}
         {page === 'galeria' && <Galeria />}
-        {page === 'platinas' && <Platinas />}
+        {page === 'jogos' && <Jogos />}
       </div>
 
       <div className="footer">all rights reserved © 2026</div>
