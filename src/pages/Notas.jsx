@@ -3,7 +3,7 @@ import grogu from "../assets/images/notas/grogu.jpg";
 
 export const notes = [
   {
-    data: "24 de maio 2026",
+    date: "24 de maio 2026",
     text: "imprimir cortadores com temática de halloween e fiz alguns biscoitos, ficaram mt bons (preciso lembrar de subir as fotos aqui)"
   },
   {

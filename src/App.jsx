@@ -63,9 +63,9 @@ function App() {
           onClick={() => setMenuAberto(!menuAberto)}
           aria-label="Menu"
         >
-          <span />
-          <span />
-          <span />
+          <span/>
+          <span/>
+          <span/>
         </button>
 
         {menuAberto && (
