@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import './Jogos.css'
+import '../styles/Jogos.css'
 
 const jogos = [
   // ── PLATINADOS ────────────────────────────────────────────────

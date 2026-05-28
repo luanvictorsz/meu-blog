@@ -1,12 +1,11 @@
 import './index.css'
 import { useState } from 'react'
 import aeternus from './assets/images/aeternus.png'
-import Home from './pages/Home.jsx'
-import Notas from './pages/Notas.jsx'
-import Projetos from './pages/Projetos.jsx'
-import Galeria from './pages/Galeria.jsx'
-import Jogos from './components/platinas/Jogos.jsx'
-
+import Home from './components/pages/Home.jsx' 
+import Notas from './components/pages/Notas.jsx'
+import Projetos from './components/pages/Projetos.jsx' 
+import Galeria from './components/pages/Galeria.jsx'
+import Jogos from './components/pages/Jogos.jsx'
 const pages = ['home', 'projetos', 'galeria', 'jogos']
 const labels = { home: 'início', projetos: 'projetos', galeria: 'galeria', jogos: 'jogos' }
 
