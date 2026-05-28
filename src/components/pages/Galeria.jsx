@@ -8,7 +8,7 @@ const items = [
     src: aeternus,
     title: 'marionete_poison_120526.gif',
     date: 'maio 2026',
-    tags: ['creepy', 'design'],
+    tags: ['weirdo', 'design'],
   },
   {
     id: 2,
