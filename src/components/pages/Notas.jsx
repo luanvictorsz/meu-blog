@@ -3,6 +3,10 @@ import grogu from "../../assets/images/notas/grogu.jpg";
 
 export const notes = [
   {
+    date: "29 de maio 2026",
+    text: "organizei alguns links do meu notion, mt coisa legal"
+  },
+  {
     date: "24 de maio 2026",
     text: "imprimir cortadores com temática de halloween e fiz alguns biscoitos, ficaram mt bons (preciso lembrar de subir as fotos aqui)"
   },
