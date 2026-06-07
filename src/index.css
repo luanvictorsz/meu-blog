@@ -555,7 +555,7 @@ body {
 
 .project-image {
   width: 100%;
-  height: 110px;
+  height: 160px;
   object-fit: cover;
   display: block;
   filter: saturate(0.6) sepia(0.3) contrast(1.1);
@@ -642,10 +642,9 @@ body {
   position: absolute;
   top: 6px;
   right: 6px;
-  background: rgba(20, 5, 0, 0.75);
-  color: var(--c-tan);
-  border: 1px solid rgba(240, 217, 181, 0.2);
-  backdrop-filter: blur(2px);
+  color: #1a0800;
+  border: 1px solid rgba(0,0,0,0.3);
+  font-weight: bold;
 }
 
 .tag {
@@ -898,6 +897,86 @@ body {
   .grid { grid-template-columns: 1fr; }
 }
 
+/* ── Carousel (projetos mobile) ──────────────────── */
+.projects-carousel { display: none; }
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  will-change: transform;
+}
+
+.carousel-slide {
+  min-width: 100%;
+  padding: 0 4px;
+}
+
+.carousel-slide .project-card {
+  width: 100%;
+}
+
+.carousel-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  margin-top: 14px;
+}
+
+.carousel-btn {
+  background: rgba(20, 5, 0, 0.6);
+  border-top: 1px solid var(--win-border-light);
+  border-left: 1px solid var(--win-border-light);
+  border-bottom: 1px solid var(--win-border-dark);
+  border-right: 1px solid var(--win-border-dark);
+  color: var(--c-tan);
+  font-family: var(--ff-display);
+  font-size: 28px;
+  line-height: 1;
+  width: 36px;
+  height: 32px;
+  cursor: pointer;
+  transition: 0.1s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel-btn:hover {
+  background: rgba(122, 37, 0, 0.5);
+  color: var(--c-cream);
+}
+
+.carousel-btn:active {
+  border-top: 1px solid var(--win-border-dark);
+  border-left: 1px solid var(--win-border-dark);
+  border-bottom: 1px solid var(--win-border-light);
+  border-right: 1px solid var(--win-border-light);
+}
+
+.carousel-dots {
+  display: flex;
+  gap: 8px;
+}
+
+.carousel-dot {
+  width: 10px;
+  height: 10px;
+  background: rgba(155, 74, 16, 0.3);
+  border-top: 1px solid var(--win-border-light);
+  border-left: 1px solid var(--win-border-light);
+  border-bottom: 1px solid var(--win-border-dark);
+  border-right: 1px solid var(--win-border-dark);
+  cursor: pointer;
+  transition: 0.15s;
+  padding: 0;
+}
+
+.carousel-dot.active {
+  background: var(--c-primary);
+  transform: scale(1.25);
+}
+
 @media (max-width: 700px) {
   .desktop-layout {
     flex-direction: column;
@@ -915,24 +994,43 @@ body {
     min-width: 140px;
   }
 
+  .taskbar-item { display: none; }
+
+  /* Projetos: esconde grid, mostra carrossel */
+  .projects-grid    { display: none; }
+  .projects-carousel {
+    display: block;
+    overflow: hidden;
+    padding: 4px 0;
+  }
+
+  /* Galeria: grid responsivo 2 colunas */
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 10px !important;
+  }
+
+  .gallery-item img {
+    height: 120px;
+  }
+
+  /* Platinas */
   .platinas-grid {
     grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
   }
-
-  .projects-grid {
-    justify-content: center;
-  }
-
-  .project-card {
-    width: 100%;
-    max-width: 320px;
-  }
-
-  .taskbar-item { display: none; }
 }
 
 @media (max-width: 480px) {
   .platinas-grid {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .gallery-grid {
+    grid-template-columns: 1fr 1fr !important;
+    gap: 8px !important;
+  }
+
+  .gallery-item img {
+    height: 100px;
   }
 }

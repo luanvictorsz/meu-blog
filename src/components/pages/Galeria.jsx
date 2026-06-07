@@ -20,34 +20,26 @@ const items = [
     tags: ['psx', 'gamedev'],
   },
   {
+    id: 3,
     type: 'image',
     src: pyramid,
     title: 'pyramid_head_06062026.jpg',
     date: 'junho 2026',
-    tags: ['impressao', 'game']
-  }
+    tags: ['impressao', 'game'],
+  },
 ]
 
 function Galeria() {
   const [selected, setSelected] = useState(null)
 
-  const getYoutubeId = (url) => {
-    return new URL(url).searchParams.get('v')
-  }
-
-  const toEmbedUrl = (url) => {
-    const id = getYoutubeId(url)
-    return `https://www.youtube.com/embed/${id}`
-  }
-
-  const getThumbnail = (url) => {
-    const id = getYoutubeId(url)
-    return `https://img.youtube.com/vi/${id}/hqdefault.jpg`
-  }
+  const getYoutubeId = (url) => new URL(url).searchParams.get('v')
+  const toEmbedUrl   = (url) => `https://www.youtube.com/embed/${getYoutubeId(url)}`
+  const getThumbnail = (url) => `https://img.youtube.com/vi/${getYoutubeId(url)}/hqdefault.jpg`
 
   return (
     <div className="page-content">
       <div
+        className="gallery-grid"
         style={{
           display: 'grid',
           gridTemplateColumns: 'repeat(auto-fill, minmax(200px, 1fr))',
@@ -61,14 +53,9 @@ function Galeria() {
             onClick={() => setSelected(item)}
           >
             <img
-              src={
-                item.type === 'video'
-                  ? getThumbnail(item.src)
-                  : item.src
-              }
+              src={item.type === 'video' ? getThumbnail(item.src) : item.src}
               alt={item.title}
             />
-
             <div className="gallery-caption">
               <span>{item.title}</span>
             </div>
@@ -78,16 +65,8 @@ function Galeria() {
 
       {selected && (
         <div className="lightbox" onClick={() => setSelected(null)}>
-          <div
-            className="lightbox-inner"
-            onClick={(e) => e.stopPropagation()}
-          >
-            <button
-              className="lightbox-close"
-              onClick={() => setSelected(null)}
-            >
-              ✕
-            </button>
+          <div className="lightbox-inner" onClick={(e) => e.stopPropagation()}>
+            <button className="lightbox-close" onClick={() => setSelected(null)}>✕</button>
 
             {selected.type === 'video' ? (
               <iframe
@@ -104,35 +83,15 @@ function Galeria() {
             )}
 
             <div style={{ padding: '12px 16px' }}>
-              <div
-                className="card-title"
-                style={{ padding: 0, marginBottom: 6 }}
-              >
+              <div className="card-title" style={{ padding: 0, marginBottom: 6 }}>
                 {selected.title}
               </div>
-
-              <p
-                style={{
-                  padding: 0,
-                  marginBottom: 8,
-                  opacity: 0.7,
-                  fontSize: 16,
-                }}
-              >
+              <p style={{ padding: 0, marginBottom: 8, opacity: 0.7, fontSize: 16 }}>
                 {selected.date}
               </p>
-
-              <div
-                style={{
-                  display: 'flex',
-                  gap: 8,
-                  flexWrap: 'wrap',
-                }}
-              >
+              <div style={{ display: 'flex', gap: 8, flexWrap: 'wrap' }}>
                 {selected.tags.map((t) => (
-                  <span className="tag" key={t}>
-                    {t}
-                  </span>
+                  <span className="tag" key={t}>{t}</span>
                 ))}
               </div>
             </div>
