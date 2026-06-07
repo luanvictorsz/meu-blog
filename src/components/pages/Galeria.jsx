@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import aeternus from '../../assets/images/projects/marionet_1.gif'
+import pyramid from '../../assets/images/projects/impressao/pyramid.jpg'
 
 const items = [
   {
@@ -18,6 +19,13 @@ const items = [
     date: 'outubro 2025',
     tags: ['psx', 'gamedev'],
   },
+  {
+    type: 'image',
+    src: pyramid,
+    title: 'pyramid_head_06062026.jpg',
+    date: 'junho 2026',
+    tags: ['impressao', 'game']
+  }
 ]
 
 function Galeria() {
