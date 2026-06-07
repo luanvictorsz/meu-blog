@@ -3,6 +3,7 @@ import '../styles/Jogos.css'
 
 const jogos = [
   // ── PLATINADOS ────────────────────────────────────────────────
+   {titulo: 'Resident Evil Requiem', imagem: 'https://cdn.akamai.steamstatic.com/steam/apps/2702200/header.jpg', platinado: true },
   { titulo: 'Eastward', imagem: 'https://cdn.akamai.steamstatic.com/steam/apps/977880/header.jpg', platinado: true },
   { titulo: 'FNaF: Into the Pit', imagem: 'https://cdn.akamai.steamstatic.com/steam/apps/2638370/header.jpg', platinado: true },
   { titulo: 'Junji Ito Maniac: An Infinite Gaol', imagem: 'https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3633250/capsule_616x353.jpg', platinado: true },
@@ -38,7 +39,7 @@ const jogos = [
   { titulo: 'The Last Campfire', imagem: 'https://cdn.akamai.steamstatic.com/steam/apps/990630/header.jpg', platinado: true },
   { titulo: "Tiny Terry's Turbo Trip", imagem: 'https://cdn.akamai.steamstatic.com/steam/apps/2238040/header.jpg', platinado: true },
   // ── JOGADOS ───────────────────────────────────────────────────
-  { titulo: 'Resident Evil Requiem', imagem: 'https://cdn.akamai.steamstatic.com/steam/apps/2702200/header.jpg', platinado: false },
+
   { titulo: "Marvel's Spider-Man: Miles Morales", imagem: 'https://cdn.akamai.steamstatic.com/steam/apps/1817190/header.jpg', platinado: false },
   { titulo: 'Clair Obscur: Expedition 33', imagem: 'https://cdn.akamai.steamstatic.com/steam/apps/1903340/header.jpg', platinado: false },
   { titulo: 'R.E.P.O.', imagem: 'https://cdn.akamai.steamstatic.com/steam/apps/3241660/header.jpg', platinado: false },
