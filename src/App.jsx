@@ -86,8 +86,8 @@ function App() {
 
           <WinWindow icon="♠" title="sobre">
             <div className="win-about">
-              <p><strong>era:</strong> sombria</p>
-              <p><strong>tema:</strong> trevas e criações</p>
+              <p><strong>host:</strong> aeternus</p>
+              <p><strong>stuff:</strong> neocitie</p>
               <p><strong>status:</strong> ativa ✦</p>
             </div>
           </WinWindow>
