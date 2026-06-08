@@ -1,6 +1,9 @@
 import { useState } from 'react'
 import aeternus from '../../assets/images/projects/marionet_1.gif'
 import pyramid from '../../assets/images/projects/impressao/pyramid.jpg'
+import marcaPagina from "../../assets/images/notas/marcaPaginas.jpg";
+import grogu from "../../assets/images/notas/grogu.jpg";
+
 
 const items = [
   {
@@ -26,6 +29,22 @@ const items = [
     title: 'pyramid_head_06062026.jpg',
     date: 'junho 2026',
     tags: ['impressao', 'game'],
+  },
+  {
+    id: 4,
+    type: 'image',
+    src: grogu,
+    title: 'grogu_16052026.jpg',
+    date: 'maio 2026',
+    tags: ['impressao', 'geek'],
+  },
+    {
+    id: 5,
+    type: 'image',
+    src: marcaPagina,
+    title: 'marcaPaginas.jpg',
+    date: 'maio 2026',
+    tags: ['impressao', 'cats'],
   },
 ]
 

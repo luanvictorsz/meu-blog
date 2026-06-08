@@ -1,7 +1,5 @@
-import marcaPagina from "../../assets/images/notas/marcaPaginas.jpg";
-import grogu from "../../assets/images/notas/grogu.jpg";
 
-const notes = [
+export const notes = [
   {
     date: "08 de junho 2026",
     text: "fiz algumas encomendas para entrega, preciso me organizar melhor para conseguir entregar mais rápido, mas estou feliz com o resultado",
@@ -25,7 +23,6 @@ const notes = [
   {
     date: "16 maio 2026",
     text: "fiz um charmander e um Grogu (Bebe Yoda), o charmander vai ser pintado amanhã, meu irmão pintou o grogu hj",
-    image: grogu,
   },
   {
     date: "16 maio 2026",
@@ -54,7 +51,6 @@ const notes = [
   {
     date: "11 maio 2026",
     text: "imprimi um marca paginas de gatinho usando a impressora 3D.",
-    image: marcaPagina,
   },
   {
     date: "08 maio 2026",
