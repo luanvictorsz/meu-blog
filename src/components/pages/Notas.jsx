@@ -1,11 +1,15 @@
 import marcaPagina from "../../assets/images/notas/marcaPaginas.jpg";
 import grogu from "../../assets/images/notas/grogu.jpg";
 
-export const notes = [
+const notes = [
+  {
+    date: "08 de junho 2026",
+    text: "fiz algumas encomendas para entrega, preciso me organizar melhor para conseguir entregar mais rápido, mas estou feliz com o resultado",
+  },
   {
     date: "06 de junho 2026",
     text:"fiz duas novas impressões e cortei o cabelo, vou começar a publicar as impressoes aqui no site"
-    },
+  },
   {
     date: "29 de maio 2026",
     text: "organizei alguns links do meu notion, mt coisa legal"
