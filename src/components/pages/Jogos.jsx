@@ -1,8 +1,9 @@
 import { useState } from 'react'
 import '../styles/Jogos.css'
 
+// Lista completa de jogos com imagens LOCAIS
 const jogos = [
-  // ── PLATINADOS ────────────────────────────────────────────────
+  // ── PLATINADOS (jogos da Steam, imagens via CDN funcionam) ─────
   { titulo: "Marvel's Spider-Man: Miles Morales", imagem: 'https://cdn.akamai.steamstatic.com/steam/apps/1817190/header.jpg', platinado: true },
   { titulo: 'Resident Evil Requiem', imagem: 'https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3764200/ce5437442768e38eb575f205ab9397d0264017b0/header.jpg?t=1779840172', platinado: true},
   { titulo: 'Eastward', imagem: 'https://cdn.akamai.steamstatic.com/steam/apps/977880/header.jpg', platinado: true },
@@ -15,7 +16,7 @@ const jogos = [
   { titulo: 'Trailmakers', imagem: 'https://cdn.akamai.steamstatic.com/steam/apps/585420/header.jpg', platinado: true },
   { titulo: 'PEAK', imagem: 'https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3527290/c6791f0f1b7b29f6304e283ac7a2cabc27c7eb0d/capsule_616x353.jpg?t=1775581133', platinado: true },
   { titulo: 'Lucius', imagem: 'https://cdn.akamai.steamstatic.com/steam/apps/218640/header.jpg', platinado: true },
-  { titulo: 'FNaF: Secret of the Mimic', imagem: 'https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2215390/header.jpg', platinado: true },
+  { titulo: 'FNaF: Secret of the Mimic', imagem: 'https://static.wikia.nocookie.net/freddy-fazbears-pizza/images/c/cf/SecretoftheMimic_PSIcon2.jpg/revision/latest/scale-to-width-down/1000?cb=20250213015424', platinado: true },
   { titulo: 'Rogue Heroes: Ruins of Tasos', imagem: 'https://cdn.akamai.steamstatic.com/steam/apps/787810/header.jpg', platinado: true },
   { titulo: 'Road Defense: Outsiders', imagem: 'https://cdn.akamai.steamstatic.com/steam/apps/1973320/header.jpg', platinado: true },
   { titulo: 'Bad Cheese', imagem: 'https://cdn.akamai.steamstatic.com/steam/apps/3094480/header.jpg', platinado: true },
@@ -39,22 +40,64 @@ const jogos = [
   { titulo: 'Mr. Saitou', imagem: 'https://cdn.akamai.steamstatic.com/steam/apps/628740/header.jpg', platinado: true },
   { titulo: 'The Last Campfire', imagem: 'https://cdn.akamai.steamstatic.com/steam/apps/990630/header.jpg', platinado: true },
   { titulo: "Tiny Terry's Turbo Trip", imagem: 'https://cdn.akamai.steamstatic.com/steam/apps/2238040/header.jpg', platinado: true },
-  // ── JOGADOS ───────────────────────────────────────────────────
-  { titulo: 'Kirby and the Forgotten Land', imagem: 'https://assets.nintendo.com/image/upload/ar_16:9,c_lpad,b_auto/b_white/f_auto/q_auto/ncom/software/switch/70010000043572/b8f2d123f9b1ed6928e64adcfe8e6e26c78eed0b4a1ea0d44b1e9b0f1a060e7', platinado: false },
-  { titulo: 'The Legend of Zelda: Breath of the Wild', imagem: 'https://assets.nintendo.com/image/upload/ar_16:9,c_lpad,b_auto/b_white/f_auto/q_auto/ncom/software/switch/70010000000025/3b83bc5a2c3fc84cf87e2c37e4d4c679ae5f4b40e5e58cfdc33da6b28a2c1bec', platinado: false },
-  { titulo: 'Clair Obscur: Expedition 33', imagem: 'https://cdn.akamai.steamstatic.com/steam/apps/1903340/header.jpg', platinado: false },
-  { titulo: 'R.E.P.O.', imagem: 'https://cdn.akamai.steamstatic.com/steam/apps/3241660/header.jpg', platinado: false },
-  { titulo: "Baldur's Gate 3", imagem: 'https://cdn.akamai.steamstatic.com/steam/apps/1086940/header.jpg', platinado: false },
-  { titulo: 'Halo: The Master Chief Collection', imagem: 'https://cdn.akamai.steamstatic.com/steam/apps/976730/header.jpg', platinado: false },
-  { titulo: 'mario golf: super rush', imagem: 'https://assets.nintendo.com/image/upload/ar_16:9,c_lpad,b_auto/f_auto/q_auto/ncom/software/switch/70010000000026/1c8e7b0a2c3fc84cf87e2c37e4d4c679ae5f4b40e5e58cfdc33da6b28a2c1bec', platinado: false },
-  { titulo: 'Conan Exiles', imagem: 'https://cdn.akamai.steamstatic.com/steam/apps/440900/header.jpg', platinado: false },
-  { titulo: 'Black Myth: Wukong', imagem: 'https://cdn.akamai.steamstatic.com/steam/apps/2358720/header.jpg', platinado: false },
-  { titulo: 'Warhammer 40,000: Space Marine 2', imagem: 'https://cdn.akamai.steamstatic.com/steam/apps/2183900/header.jpg', platinado: false },
-  { titulo: 'Cyberpunk 2077', imagem: 'https://cdn.akamai.steamstatic.com/steam/apps/1091500/header.jpg', platinado: false },
-  { titulo: 'ONE PIECE World Seeker', imagem: 'https://cdn.akamai.steamstatic.com/steam/apps/755500/header.jpg', platinado: false },
-  { titulo: 'We Happy Few', imagem: 'https://cdn.akamai.steamstatic.com/steam/apps/320240/header.jpg', platinado: false },
+  
+  // ── JOGADOS DA NINTENDO (IMAGENS LOCAIS) ───────────────────────
+
+  { titulo: 'Kirby and the Forgotten Land', 
+    imagem: 'https://assets.nintendo.com/image/upload/ar_16:9,c_lpad,w_656/b_white/f_auto/q_auto/store/software/switch2/70010000096829/0a06bf277f1eb585fcbb7ddeb4f70014fd1c860d326eb33c8accf4d4827ade72', 
+    platinado: false },
+    
+  { titulo: 'The Legend of Zelda: Breath of the Wild', 
+    imagem: 'https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_1.5/c_scale,w_1200/store/software/switch2/70010000096817/cfe9f8d674be958326d3ba11fc7598a4383e5c5d7809b6239ccac0783aac6cd8', 
+    platinado: false },
+    
+  { titulo: 'Mario Golf: Super Rush', 
+    imagem: 'https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_1.5/c_scale,w_1200/store/software/switch/70010000038622/af5246b2f01dee8111a70bcb3f556e65a492801d6677d0ab0f17b566a7b0285b', 
+    platinado: false },
+    
+  // ── OUTROS JOGOS NÃO PLATINADOS
+  { titulo: 'Clair Obscur: Expedition 33', 
+    imagem: 'https://cdn.akamai.steamstatic.com/steam/apps/1903340/header.jpg', 
+    platinado: false },
+    
+  { titulo: 'R.E.P.O.', 
+    imagem: 'https://cdn.akamai.steamstatic.com/steam/apps/3241660/header.jpg', 
+    platinado: false },
+    
+  { titulo: "Baldur's Gate 3", 
+    imagem: 'https://cdn.akamai.steamstatic.com/steam/apps/1086940/header.jpg', 
+    platinado: false },
+    
+  { titulo: 'Halo: The Master Chief Collection', 
+    imagem: 'https://cdn.akamai.steamstatic.com/steam/apps/976730/header.jpg', 
+    platinado: false },
+    
+  { titulo: 'Conan Exiles', 
+    imagem: 'https://cdn.akamai.steamstatic.com/steam/apps/440900/header.jpg', 
+    platinado: false },
+    
+  { titulo: 'Black Myth: Wukong', 
+    imagem: 'https://cdn.akamai.steamstatic.com/steam/apps/2358720/header.jpg', 
+    platinado: false },
+    
+  { titulo: 'Warhammer 40,000: Space Marine 2', 
+    imagem: 'https://cdn.akamai.steamstatic.com/steam/apps/2183900/header.jpg', 
+    platinado: false },
+    
+  { titulo: 'Cyberpunk 2077', 
+    imagem: 'https://cdn.akamai.steamstatic.com/steam/apps/1091500/header.jpg', 
+    platinado: false },
+    
+  { titulo: 'ONE PIECE World Seeker', 
+    imagem: 'https://cdn.akamai.steamstatic.com/steam/apps/755500/header.jpg', 
+    platinado: false },
+    
+  { titulo: 'We Happy Few', 
+    imagem: 'https://cdn.akamai.steamstatic.com/steam/apps/320240/header.jpg', 
+    platinado: false },
 ]
 
+// Ícones e componentes...
 const IconeEstrelaPrata = () => (
   <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" width="22" height="22">
     <polygon points="16,2 19.5,11.5 30,11.5 21.5,17.5 24.5,28 16,22 7.5,28 10.5,17.5 2,11.5 12.5,11.5" fill="#c0c0c0" stroke="#888" strokeWidth="1" />
@@ -68,7 +111,9 @@ const IconeJogado = () => (
   </svg>
 )
 
-function PlátinaCard({ jogo }) {
+function PlatinaCard({ jogo }) {
+  const [imgError, setImgError] = useState(false)
+  
   return (
     <div className="platina-card">
       <div className="platina-imagem-wrapper">
@@ -76,8 +121,16 @@ function PlátinaCard({ jogo }) {
           src={jogo.imagem}
           alt={jogo.titulo}
           className="platina-imagem"
-          onError={(e) => { e.target.style.display = 'none' }}
+          onError={(e) => { 
+            setImgError(true)
+            e.target.style.display = 'none' 
+          }}
         />
+        {imgError && (
+          <div className="platina-imagem-fallback">
+            {jogo.titulo}
+          </div>
+        )}
         <div className="platina-overlay" />
         <div className="platina-estrela">
           {jogo.platinado ? <IconeEstrelaPrata /> : <IconeJogado />}
@@ -119,7 +172,7 @@ export default function Jogos() {
       ) : (
         <div className="platinas-grid">
           {lista.map((jogo) => (
-            <PlátinaCard key={jogo.titulo} jogo={jogo} />
+            <PlatinaCard key={jogo.titulo} jogo={jogo} />
           ))}
         </div>
       )}
