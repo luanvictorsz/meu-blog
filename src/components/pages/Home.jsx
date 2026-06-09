@@ -1,6 +1,6 @@
 import { notes } from './Notas.jsx'
 
-function Home({ onNavigate }) {
+function Home() {
   return (
     <div className="grid">
       <div className="card">
