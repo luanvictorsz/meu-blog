@@ -1,17 +1,7 @@
-
 .platinas-page {
   display: flex;
   flex-direction: column;
   gap: 18px;
-}
-
-.platinas-contador {
-  text-align: center;
-  font-family: 'Cinzel Decorative', 'Chewy', cursive;
-  font-size: clamp(13px, 2vw, 18px);
-  color: #7a2500;
-  letter-spacing: 2px;
-  opacity: 0.75;
 }
 
 .platinas-grid {
@@ -21,40 +11,41 @@
 }
 
 .platina-card {
-  background: #5c1800;
-  border: 4px solid #3a0e00;
-  border-radius: 14px;
   overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  box-shadow: 0 8px 20px rgba(60, 10, 0, 0.3);
-  transition: 0.2s;
-  min-width: 0;
 }
 
 .platina-card:hover {
   transform: translateY(-4px);
-  box-shadow: 0 14px 28px rgba(80, 20, 0, 0.4), 0 0 18px rgba(200, 80, 0, 0.15);
+  box-shadow: 0 14px 28px rgba(80, 20, 0, 0.4),
+              0 0 18px rgba(200, 80, 0, 0.15);
 }
 
 .platina-imagem-wrapper {
   position: relative;
-  height: 65px;
+  overflow: hidden;
+  width: 100%;
+  height: 230px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .platina-imagem {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center top;
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
   display: block;
-  filter: saturate(0.7) sepia(0.2) contrast(1.1);
 }
 
 .platina-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(to bottom, transparent 20%, rgba(30, 8, 0, 0.65));
+  background: linear-gradient(
+    to bottom,
+    transparent 20%,
+    rgba(30, 8, 0, 0.65)
+  );
   pointer-events: none;
 }
 
@@ -71,17 +62,21 @@
 
 .platina-titulo {
   font-family: 'Cinzel Decorative', cursive;
-  font-size: clamp(7px, 1vw, 10px);
+  font-size: clamp(9px, 1vw, 12px);
   color: #f0d9b5;
-  letter-spacing: 0.2px;
   margin: 0;
   line-height: 1.3;
   word-break: break-word;
 }
 
+/* Tablet */
 @media (max-width: 700px) {
   .platinas-grid {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .platina-imagem-wrapper {
+    height: 180px;
   }
 
   .platina-titulo {
@@ -89,6 +84,7 @@
   }
 }
 
+/* Mobile */
 @media (max-width: 400px) {
   .platinas-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -96,48 +92,16 @@
   }
 
   .platina-imagem-wrapper {
-    height: 50px;
+    height: 30vw;
+    min-height: 100px;
+    max-height: 140px;
   }
-}
-/* ── Abas ─────────────────────────────────────────── */
-.platinas-abas {
-  display: flex;
-  justify-content: center;
-  gap: 12px;
-}
 
-.platinas-aba {
-  background: rgba(245, 225, 180, 0.75);
-  border: 3px dashed #9b4a10;
-  border-radius: 18px;
-  padding: 7px 18px;
-  color: #5c1800;
-  font-family: 'Cinzel Decorative', 'Chewy', cursive;
-  font-size: clamp(11px, 1.6vw, 15px);
-  cursor: pointer;
-  box-shadow: 0 4px 0 #c47840;
-  transition: 0.15s;
-  letter-spacing: 1px;
-}
+  .platina-titulo {
+    font-size: 9px;
+  }
 
-.platinas-aba:hover {
-  background: rgba(240, 210, 150, 0.9);
-  box-shadow: 0 4px 0 #7a2500;
-}
-
-.platinas-aba.ativa {
-  background: #7a2500;
-  color: #fdf0d0;
-  border-color: #4a1200;
-  box-shadow: 0 4px 0 #4a1200;
-  transform: rotate(-1deg) scale(1.04);
-}
-
-.platinas-vazio {
-  text-align: center;
-  color: #9b4a10;
-  font-family: 'Special Elite', cursive;
-  font-size: clamp(13px, 2vw, 17px);
-  opacity: 0.7;
-  padding: 24px 0;
+  .platina-corpo {
+    padding: 6px;
+  }
 }

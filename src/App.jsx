@@ -94,8 +94,8 @@ function App() {
 
           <WinWindow icon="✉" title="contato">
             <div className="win-about">
-              <p>via discord</p>
-              <p>via twitter</p>
+              <p><strong>discord:</strong><br/> @nickname.v</p>
+              <p><strong>instagram:</strong> @aeternuspoison</p>
             </div>
           </WinWindow>
         </div>
