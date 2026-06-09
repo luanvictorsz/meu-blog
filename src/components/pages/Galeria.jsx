@@ -4,10 +4,8 @@ import pyramid from '../../assets/images/projects/impressao/pyramid.jpg'
 import marcaPagina from "../../assets/images/notas/marcaPaginas.jpg";
 import grogu from "../../assets/images/notas/grogu.jpg";
 
-
 const items = [
   {
-    id: 1,
     type: 'image',
     src: aeternus,
     title: 'marionete_poison_120526.gif',
@@ -15,7 +13,6 @@ const items = [
     tags: ['weirdo', 'design'],
   },
   {
-    id: 2,
     type: 'video',
     src: 'https://www.youtube.com/watch?v=xtVbCJ-h2oQ',
     title: 'the_end_of_the_world.mp4',
@@ -23,7 +20,6 @@ const items = [
     tags: ['psx', 'gamedev'],
   },
   {
-    id: 3,
     type: 'image',
     src: pyramid,
     title: 'pyramid_head_06062026.jpg',
@@ -31,15 +27,13 @@ const items = [
     tags: ['impressao', 'game'],
   },
   {
-    id: 4,
     type: 'image',
     src: grogu,
     title: 'grogu_16052026.jpg',
     date: 'maio 2026',
     tags: ['impressao', 'geek'],
   },
-    {
-    id: 5,
+  {
     type: 'image',
     src: marcaPagina,
     title: 'marcaPaginas.jpg',
@@ -48,15 +42,39 @@ const items = [
   },
 ]
 
+const allTags = ['all', ...new Set(items.flatMap((item) => item.tags))]
+
 function Galeria() {
   const [selected, setSelected] = useState(null)
+  const [activeTag, setActiveTag] = useState('all')
 
   const getYoutubeId = (url) => new URL(url).searchParams.get('v')
   const toEmbedUrl   = (url) => `https://www.youtube.com/embed/${getYoutubeId(url)}`
   const getThumbnail = (url) => `https://img.youtube.com/vi/${getYoutubeId(url)}/hqdefault.jpg`
 
+  const filtered = activeTag === 'all'
+    ? items
+    : items.filter((item) => item.tags.includes(activeTag))
+
   return (
     <div className="page-content">
+      <div style={{ display: 'flex', gap: 8, flexWrap: 'wrap', marginBottom: 16 }}>
+        {allTags.map((tag) => (
+          <span
+            key={tag}
+            className="tag"
+            onClick={() => setActiveTag(tag)}
+            style={{
+              cursor: 'pointer',
+              opacity: activeTag === tag ? 1 : 0.45,
+              fontWeight: activeTag === tag ? 'bold' : 'normal',
+            }}
+          >
+            {tag}
+          </span>
+        ))}
+      </div>
+
       <div
         className="gallery-grid"
         style={{
@@ -65,9 +83,9 @@ function Galeria() {
           gap: 16,
         }}
       >
-        {items.map((item) => (
+        {filtered.map((item) => (
           <div
-            key={item.id}
+            key={item.title}
             className="gallery-item"
             onClick={() => setSelected(item)}
           >
@@ -110,7 +128,14 @@ function Galeria() {
               </p>
               <div style={{ display: 'flex', gap: 8, flexWrap: 'wrap' }}>
                 {selected.tags.map((t) => (
-                  <span className="tag" key={t}>{t}</span>
+                  <span
+                    className="tag"
+                    key={t}
+                    onClick={() => { setActiveTag(t); setSelected(null) }}
+                    style={{ cursor: 'pointer' }}
+                  >
+                    {t}
+                  </span>
                 ))}
               </div>
             </div>
