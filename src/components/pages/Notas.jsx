@@ -1,6 +1,10 @@
 
 export const notes = [
   {
+    date: "14 de junho 2026",
+    text: "zerei Kirby and the forgotten land"
+  },
+  {
     date: "08 de junho 2026",
     text: "fiz algumas encomendas para entrega, preciso me organizar melhor para conseguir entregar mais rápido, mas estou feliz com o resultado",
   },
