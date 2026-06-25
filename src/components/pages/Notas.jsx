@@ -1,6 +1,10 @@
 
 export const notes = [
   {
+    date: "24 de junho 2026",
+    text: "zerei pragmata e iniciei um canal no youtube, logo no primeiro dia bateu 3 mil view em shorts,logo posto imagem para relembrar"
+  },
+  {
     date: "14 de junho 2026",
     text: "zerei Kirby and the forgotten land"
   },
