@@ -53,6 +53,8 @@ function App() {
   return (
     <div className="desktop">
       <div className="desktop-header">
+        
+        {/* 
         <div className="logo-area">
           <img
             src={aeternus}
@@ -64,7 +66,9 @@ function App() {
                 '<div class="logo-placeholder">★ Aeternus Poison ★</div>'
             }}
           />
-        </div>
+        </div> 
+        */}
+
       </div>
 
       <div className="desktop-layout">
