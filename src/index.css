@@ -45,9 +45,9 @@ body {
   color: var(--c-tan);
   overflow-x: hidden;
   background-color: var(--c-bg);
-  background-image: url("/images/8291.jpg");
-  background-repeat: repeat;
-  background-size: 320px;
+  background-image: url("/images/windowsXP.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
   letter-spacing: 0.8px;
 }
 
@@ -57,8 +57,6 @@ body {
   display: flex;
   flex-direction: column;
 }
-
-/* ── Layout ─────────────────────────────────────── */
 
 .desktop {
   display: flex;
@@ -120,8 +118,6 @@ body {
   flex: 1;
   min-width: 0;
 }
-
-/* ── Windows ────────────────────────────────────── */
 
 .win-window {
   background: var(--win-bg);
@@ -216,8 +212,6 @@ body {
   letter-spacing: 2px;
 }
 
-/* ── Nav ────────────────────────────────────────── */
-
 .win-nav {
   display: flex;
   flex-direction: column;
@@ -251,8 +245,6 @@ body {
   animation: glowPulse 3s ease-in-out infinite;
 }
 
-/* ── About ──────────────────────────────────────── */
-
 .win-about {
   display: flex;
   flex-direction: column;
@@ -267,8 +259,6 @@ body {
 }
 
 .win-about strong { color: #1c56a6; }
-
-/* ── Taskbar ────────────────────────────────────── */
 
 .desktop-taskbar {
   position: fixed;
@@ -346,8 +336,6 @@ body {
   border: 1px solid rgba(240, 217, 181, 0.15);
 }
 
-/* ── Cards (home grid) ──────────────────────────── */
-
 .grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -423,8 +411,6 @@ body {
   color: var(--c-tan);
 }
 
-/* ── News ───────────────────────────────────────── */
-
 .news {
   padding: clamp(8px, 1.5vw, 14px);
   display: flex;
@@ -491,8 +477,6 @@ body {
   color: var(--c-tan);
 }
 
-/* ── Pages ──────────────────────────────────────── */
-
 .page-title {
   font-family: var(--ff-display);
   font-size: clamp(26px, 4vw, 48px);
@@ -503,8 +487,6 @@ body {
 }
 
 .page-content { width: 100%; }
-
-/* ── Notes ──────────────────────────────────────── */
 
 .note-input {
   flex: 1;
@@ -711,8 +693,6 @@ body {
   letter-spacing: 2px;
 }
 
-/* ── Badges & Tags ──────────────────────────────── */
-
 .status-badge {
   font-family: var(--ff-mono);
   font-size: 12px;
@@ -744,8 +724,6 @@ body {
   border-color: rgba(196, 120, 64, 0.5);
   color: var(--c-cream);
 }
-
-/* ── Gallery ────────────────────────────────────── */
 
 .gallery-item {
   background: rgba(20, 5, 0, 0.5);
@@ -813,8 +791,6 @@ body {
   letter-spacing: 2px;
 }
 
-/* ── Lightbox ───────────────────────────────────── */
-
 .lightbox {
   position: fixed;
   inset: 0;
@@ -872,8 +848,6 @@ body {
 }
 
 .lightbox-close:hover { background: var(--c-deep); }
-
-/* ── Platinas ───────────────────────────────────── */
 
 .platinas-page { width: 100%; }
 
@@ -998,8 +972,6 @@ body {
   letter-spacing: 0.5px;
 }
 
-/* ── Carousel ───────────────────────────────────── */
-
 .projects-carousel { display: none; }
 
 .carousel-track {
@@ -1070,8 +1042,6 @@ body {
   transform: scale(1.25);
 }
 
-/* ── Scrollbars ──────────────────────────────────── */
-
 ::-webkit-scrollbar { width: 10px; height: 10px; }
 
 ::-webkit-scrollbar-track {
@@ -1095,8 +1065,6 @@ body {
   border-right: 1px solid var(--win-border-dark);
   height: 10px;
 }
-
-/* ── Animations ──────────────────────────────────── */
 
 @keyframes fadeSlideIn {
   from { opacity: 0; transform: translateY(18px); }
@@ -1137,14 +1105,10 @@ body {
   100% { transform: rotate(-1.5deg); }
 }
 
-/* ── Responsive ──────────────────────────────────── */
-
-/* Tablet largo */
 @media (max-width: 900px) {
   .project-card { width: 200px; }
 }
 
-/* Tablet */
 @media (max-width: 800px) {
   .grid { grid-template-columns: 1fr; }
 
@@ -1153,7 +1117,6 @@ body {
   }
 }
 
-/* Mobile largo / tablet pequeno */
 @media (max-width: 700px) {
   .desktop-layout {
     flex-direction: column;
@@ -1197,7 +1160,6 @@ body {
   .main-window .win-body { padding: 10px; min-height: unset; }
 }
 
-/* Mobile */
 @media (max-width: 480px) {
   .desktop-layout { padding: 6px; gap: 6px; }
 
@@ -1221,7 +1183,6 @@ body {
   .platinas-abas { flex-wrap: wrap; }
 }
 
-/* Mobile pequeno */
 @media (max-width: 360px) {
   .sidebar .win-window { min-width: 100%; }
 
