@@ -2,6 +2,10 @@ import  PrimeiroVideo  from "../../assets/images/notas/PrimeiroVideo.png";
 
 export const notes = [
   {
+    date: "27 de junho 2026",
+    text: "voltei ao desenvolvimento de jogos, tive um progresso incrivel"
+  },
+  {
     image: PrimeiroVideo,
     date: "24 de junho 2026",
     text: "zerei pragmata e iniciei um canal no youtube, logo no primeiro dia bateu 3 mil view em shorts,logo posto imagem para relembrar"
