@@ -7,6 +7,11 @@ export const notes = [
     text: "zerei pragmata e iniciei um canal no youtube, logo no primeiro dia bateu 3 mil view em shorts,logo posto imagem para relembrar"
   },
   {
+    date: "20 de junho 2026",
+    text: "zerei mario Odissey"
+
+  },
+  {
     date: "14 de junho 2026",
     text: "zerei Kirby and the forgotten land"
   },
