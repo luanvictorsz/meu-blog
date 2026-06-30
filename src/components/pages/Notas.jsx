@@ -3,7 +3,7 @@ import  PrimeiroVideo  from "../../assets/images/notas/PrimeiroVideo.png";
 export const notes = [
   {
     date: "27 de junho 2026",
-    text: "voltei ao desenvolvimento de jogos, tive um progresso incrivel"
+    text: "voltei ao desenvolvimento de jogos, tive um progresso incrivel e fiz amizade com uma garota do egito chamada Menna, ela me conta muitas curiosidades sobre Cairo"
   },
   {
     image: PrimeiroVideo,
