@@ -100,6 +100,7 @@ function App() {
             <div className="win-about">
               <p><strong>discord:</strong><br/> @nickname.v</p>
               <p><strong>instagram:</strong> @aeternuspoison</p>
+              <p><strong>Steam ID:</strong><br/>883937854</p>
             </div>
           </WinWindow>
         </div>
