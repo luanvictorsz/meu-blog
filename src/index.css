@@ -411,6 +411,8 @@ body {
   color: var(--c-tan);
 }
 
+/* ── Notas / News ───────────────────────────────── */
+
 .news {
   padding: clamp(8px, 1.5vw, 14px);
   display: flex;
@@ -420,6 +422,65 @@ body {
   overflow: auto;
   scrollbar-width: thin;
   scrollbar-color: var(--c-warm) transparent;
+}
+
+.news-search {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: clamp(8px, 1.5vw, 14px) clamp(8px, 1.5vw, 14px) 0;
+}
+
+.news-search-input {
+  flex: 1;
+  border-top: 1px solid var(--win-border-dark);
+  border-left: 1px solid var(--win-border-dark);
+  border-bottom: 1px solid var(--win-border-light);
+  border-right: 1px solid var(--win-border-light);
+  padding: 6px 10px;
+  font-family: var(--ff-body);
+  font-size: clamp(12px, 1.6vw, 15px);
+  color: var(--c-tan);
+  background: rgba(20, 5, 0, 0.6);
+  outline: none;
+  letter-spacing: 0.5px;
+}
+
+.news-search-input::placeholder {
+  color: rgba(240, 217, 181, 0.5);
+}
+
+.news-search-input:focus {
+  background: rgba(20, 5, 0, 0.8);
+  border-color: var(--c-accent);
+}
+
+.news-search-clear {
+  background: var(--c-primary);
+  color: var(--c-cream);
+  border-top: 1px solid var(--win-border-light);
+  border-left: 1px solid var(--win-border-light);
+  border-bottom: 1px solid var(--win-border-dark);
+  border-right: 1px solid var(--win-border-dark);
+  width: 26px;
+  height: 26px;
+  font-family: var(--ff-mono);
+  font-size: 12px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: filter 0.1s;
+}
+
+.news-search-clear:hover { filter: brightness(1.15); }
+
+.news-empty {
+  text-align: center;
+  padding: 20px 10px;
+  font-family: var(--ff-body);
+  font-size: clamp(12px, 1.6vw, 15px);
+  color: rgba(240, 217, 181, 0.6);
 }
 
 .news-item {
@@ -475,6 +536,15 @@ body {
   font-size: clamp(12px, 1.8vw, 17px);
   line-height: 1.6;
   color: var(--c-tan);
+}
+
+.news-image {
+  width: 100%;
+  max-height: 220px;
+  object-fit: cover;
+  display: block;
+  margin: 6px 0;
+  filter: saturate(0.7) sepia(0.2) contrast(1.05);
 }
 
 .page-title {
@@ -1178,7 +1248,7 @@ body {
 
   .taskbar-clock { font-size: 9px; letter-spacing: 0; }
 
-  .news { max-height: none; }
+  .news { max-height: 260px; }
 
   .platinas-abas { flex-wrap: wrap; }
 }
