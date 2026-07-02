@@ -3,6 +3,10 @@ import PrimeiroVideo from "../../assets/images/notas/PrimeiroVideo.png";
 
 export const notes = [
   {
+    date: "30 de junho 2026",
+    text: "fiz uma nova encomenda, dessa vez de um funko artesal da Sakura, estou feliz com o resultado",
+  },
+  {
     date: "27 de junho 2026",
     text: "voltei ao desenvolvimento de jogos, tive um progresso incrivel e fiz amizade com uma garota do egito chamada Menna, ela me conta muitas curiosidades sobre Cairo"
   },
