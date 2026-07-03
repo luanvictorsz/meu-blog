@@ -3,6 +3,10 @@ import PrimeiroVideo from "../../assets/images/notas/PrimeiroVideo.png";
 
 export const notes = [
   {
+    date: "03 de julho 2026",
+    text: "reorganizei a vida, vou aproveitar e quitar algumas dívidas, e só comprar novos jogos na steam (chega de novos portateis por enquanto)...",
+  },
+  {
     date: "30 de junho 2026",
     text: "fiz uma nova encomenda, dessa vez de um funko artesal da Sakura, estou feliz com o resultado",
   },
@@ -54,10 +58,6 @@ export const notes = [
     date: "13 maio 2026",
     text: 'Desenvolvi o "SearchPeople (SP)" no trabalho, ele consegue encontrar dados de pessoas com cadastro ativo do Cadúnico.',
   },
-  { date: "12 maio 2026", text: "Fiz o design no estilo marionete com Photoshop e After Effects." },
-  { date: "12 maio 2026", text: "comecei esse site inspirado em colagem e sites antigos" },
-  { date: "11 maio 2026", text: "imprimi um marca paginas de gatinho usando a impressora 3D." },
-  { date: "08 maio 2026", text: "organizei minhas texturas, projetos e imagens antigas." },
 ];
 
 function Notas() {
