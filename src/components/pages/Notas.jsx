@@ -3,6 +3,10 @@ import PrimeiroVideo from "../../assets/images/notas/PrimeiroVideo.png";
 
 export const notes = [
   {
+    date: "04 de julho 2026",
+    text: "recebi o salario então lançei o bundle de resident evil e os de far cry"
+  },
+  {
     date: "03 de julho 2026",
     text: "reorganizei a vida, vou aproveitar e quitar algumas dívidas, e só comprar novos jogos na steam (chega de novos portateis por enquanto)...",
   },
