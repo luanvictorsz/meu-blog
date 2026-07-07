@@ -49,7 +49,7 @@ const jogos = [
   },
   { 
     titulo: 'Mario Odyssey', 
-    imagem: 'https://assets.nintendo.com/image/upload/ar_16:9,c_lpad,w_656/b_white/f_auto/q_auto/store/software/switch2/70010000096817/0a06bf277f1eb585fcbb7ddeb4f70014fd1c860d326eb33c8accf4d4827ade72', 
+    imagem: 'https://assets.nintendo.com/image/upload/ar_16:9,c_lpad,w_656/b_white/f_auto/q_auto/store/software/switch/70010000001130/c42553b4fd0312c31e70ec7468c6c9bccd739f340152925b9600631f2d29f8b5', 
     platinado: false
   },
   { titulo: 'The Legend of Zelda: Breath of the Wild', 
