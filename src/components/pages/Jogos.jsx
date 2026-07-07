@@ -45,8 +45,13 @@ const jogos = [
 
   { titulo: 'Kirby and the Forgotten Land', 
     imagem: 'https://assets.nintendo.com/image/upload/ar_16:9,c_lpad,w_656/b_white/f_auto/q_auto/store/software/switch2/70010000096829/0a06bf277f1eb585fcbb7ddeb4f70014fd1c860d326eb33c8accf4d4827ade72', 
-    platinado: false },
-    
+    platinado: false 
+  },
+  { 
+    titulo: 'Mario Odyssey', 
+    imagem: 'https://assets.nintendo.com/image/upload/ar_16:9,c_lpad,w_656/b_white/f_auto/q_auto/store/software/switch2/70010000096817/0a06bf277f1eb585fcbb7ddeb4f70014fd1c860d326eb33c8accf4d4827ade72', 
+    platinado: false
+  },
   { titulo: 'The Legend of Zelda: Breath of the Wild', 
     imagem: 'https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_1.5/c_scale,w_1200/store/software/switch2/70010000096817/cfe9f8d674be958326d3ba11fc7598a4383e5c5d7809b6239ccac0783aac6cd8', 
     platinado: false },
