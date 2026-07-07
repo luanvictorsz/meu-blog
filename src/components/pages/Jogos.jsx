@@ -52,20 +52,25 @@ const jogos = [
     imagem: 'https://assets.nintendo.com/image/upload/ar_16:9,c_lpad,w_656/b_white/f_auto/q_auto/store/software/switch/70010000001130/c42553b4fd0312c31e70ec7468c6c9bccd739f340152925b9600631f2d29f8b5', 
     platinado: false
   },
-  { titulo: 'The Legend of Zelda: Breath of the Wild', 
+  {
+    titulo: 'The Legend of Zelda: Breath of the Wild', 
     imagem: 'https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_1.5/c_scale,w_1200/store/software/switch2/70010000096817/cfe9f8d674be958326d3ba11fc7598a4383e5c5d7809b6239ccac0783aac6cd8', 
-    platinado: false },
-    
-  { titulo: 'Mario Golf: Super Rush', 
+    platinado: false 
+  },
+  {
+    titulo: 'Mario Golf: Super Rush', 
     imagem: 'https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_1.5/c_scale,w_1200/store/software/switch/70010000038622/af5246b2f01dee8111a70bcb3f556e65a492801d6677d0ab0f17b566a7b0285b', 
-    platinado: false },
+    platinado: false 
+  },
     
   // ── OUTROS JOGOS NÃO PLATINADOS
-  { titulo: 'a plague tale: innocence', 
+  { 
+    titulo: 'a plague tale: innocence', 
     imagem: 'https://cdn.akamai.steamstatic.com/steam/apps/752590/header.jpg', 
     platinado: false 
   },
-  { titulo: 'pragmata', 
+  { 
+    titulo: 'pragmata', 
     imagem: 'https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3357650/e32e168b25ed68a0cf6264c220c07e96c2abfb56/header.jpg?t=1777351016', 
     platinado: false
   },
@@ -74,45 +79,63 @@ const jogos = [
     imagem: "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4249100/c6a3c50a9fd16bb11cf5d1a3f551fa7edcab09ef/capsule_616x353.jpg",
     platinado: false
   },
-  { titulo: 'Clair Obscur: Expedition 33', 
+  { 
+    titulo: 'Clair Obscur: Expedition 33', 
     imagem: 'https://cdn.akamai.steamstatic.com/steam/apps/1903340/header.jpg', 
     platinado: false },
     
-  { titulo: 'R.E.P.O.', 
+  { 
+    titulo: 'R.E.P.O.', 
     imagem: 'https://cdn.akamai.steamstatic.com/steam/apps/3241660/header.jpg', 
-    platinado: false },
-    
-  { titulo: "Baldur's Gate 3", 
+    platinado: false 
+  },
+  { 
+    titulo: "Baldur's Gate 3", 
     imagem: 'https://cdn.akamai.steamstatic.com/steam/apps/1086940/header.jpg', 
-    platinado: false },
+    platinado: false 
+  },
     
-  { titulo: 'Halo: The Master Chief Collection', 
+  { 
+    titulo: 'Halo: The Master Chief Collection', 
     imagem: 'https://cdn.akamai.steamstatic.com/steam/apps/976730/header.jpg', 
-    platinado: false },
+    platinado: false 
+  },
     
-  { titulo: 'Conan Exiles', 
+  { 
+    titulo: 'Conan Exiles', 
     imagem: 'https://cdn.akamai.steamstatic.com/steam/apps/440900/header.jpg', 
-    platinado: false },
+    platinado: false
+  },
     
-  { titulo: 'Black Myth: Wukong', 
+  { 
+    titulo: 'Black Myth: Wukong', 
     imagem: 'https://cdn.akamai.steamstatic.com/steam/apps/2358720/header.jpg', 
-    platinado: false },
+    platinado: false 
+  },
     
-  { titulo: 'Warhammer 40,000: Space Marine 2', 
+  { 
+    titulo: 'Warhammer 40,000: Space Marine 2', 
     imagem: 'https://cdn.akamai.steamstatic.com/steam/apps/2183900/header.jpg', 
-    platinado: false },
+    platinado: false 
+  },
     
-  { titulo: 'Cyberpunk 2077', 
+  { 
+    titulo: 'Cyberpunk 2077', 
     imagem: 'https://cdn.akamai.steamstatic.com/steam/apps/1091500/header.jpg', 
-    platinado: false },
+    platinado: false 
+  },
     
-  { titulo: 'ONE PIECE World Seeker', 
+  { 
+    titulo: 'ONE PIECE World Seeker', 
     imagem: 'https://cdn.akamai.steamstatic.com/steam/apps/755500/header.jpg', 
-    platinado: false },
+    platinado: false 
+  },
     
-  { titulo: 'We Happy Few', 
+  { 
+    titulo: 'We Happy Few', 
     imagem: 'https://cdn.akamai.steamstatic.com/steam/apps/320240/header.jpg', 
-    platinado: false },
+    platinado: false 
+  },
 ]
 
 // Ícones e componentes...
