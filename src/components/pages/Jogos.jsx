@@ -56,6 +56,10 @@ const jogos = [
     platinado: false },
     
   // ── OUTROS JOGOS NÃO PLATINADOS
+  { titulo: 'a plague tale: innocence', 
+    imagem: 'https://cdn.akamai.steamstatic.com/steam/apps/752590/header.jpg', 
+    platinado: false 
+  },
   { titulo: 'Clair Obscur: Expedition 33', 
     imagem: 'https://cdn.akamai.steamstatic.com/steam/apps/1903340/header.jpg', 
     platinado: false },
