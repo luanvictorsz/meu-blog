@@ -65,6 +65,10 @@ const jogos = [
     imagem: 'https://cdn.akamai.steamstatic.com/steam/apps/752590/header.jpg', 
     platinado: false 
   },
+  { titulo: 'pragmata', 
+    imagem: 'https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3357650/e32e168b25ed68a0cf6264c220c07e96c2abfb56/header.jpg?t=1777351016', 
+    platinado: false
+  },
   {
     titulo: "resident evil HD remaster",
     imagem: "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4249100/c6a3c50a9fd16bb11cf5d1a3f551fa7edcab09ef/capsule_616x353.jpg",
