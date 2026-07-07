@@ -65,6 +65,11 @@ const jogos = [
     imagem: 'https://cdn.akamai.steamstatic.com/steam/apps/752590/header.jpg', 
     platinado: false 
   },
+  {
+    titulo: "Resident evil",
+    imagem: "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4249100/c6a3c50a9fd16bb11cf5d1a3f551fa7edcab09ef/capsule_616x353.jpg",
+    platinado: false
+  },
   { titulo: 'Clair Obscur: Expedition 33', 
     imagem: 'https://cdn.akamai.steamstatic.com/steam/apps/1903340/header.jpg', 
     platinado: false },
