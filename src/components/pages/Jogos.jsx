@@ -12,6 +12,7 @@ const jogos = [
   { titulo: 'It Takes Two', imagem: 'https://cdn.akamai.steamstatic.com/steam/apps/1426210/header.jpg', platinado: true },
   { titulo: 'My Little Puppy', imagem: 'https://cdn.akamai.steamstatic.com/steam/apps/2102040/header.jpg', platinado: true },
   { titulo: 'STEINS;GATE', imagem: 'https://cdn.akamai.steamstatic.com/steam/apps/412830/header.jpg', platinado: true },
+  { titulo: 'a plague tale: innocence', imagem: 'https://cdn.akamai.steamstatic.com/steam/apps/752590/header.jpg', platinado: true },
   { titulo: 'Little Misfortune', imagem: 'https://cdn.akamai.steamstatic.com/steam/apps/714120/header.jpg', platinado: true },
   { titulo: 'Trailmakers', imagem: 'https://cdn.akamai.steamstatic.com/steam/apps/585420/header.jpg', platinado: true },
   { titulo: 'PEAK', imagem: 'https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3527290/c6791f0f1b7b29f6304e283ac7a2cabc27c7eb0d/capsule_616x353.jpg?t=1775581133', platinado: true },
@@ -64,11 +65,6 @@ const jogos = [
   },
     
   // ── OUTROS JOGOS NÃO PLATINADOS
-  { 
-    titulo: 'a plague tale: innocence', 
-    imagem: 'https://cdn.akamai.steamstatic.com/steam/apps/752590/header.jpg', 
-    platinado: false 
-  },
   { 
     titulo: 'pragmata', 
     imagem: 'https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3357650/e32e168b25ed68a0cf6264c220c07e96c2abfb56/header.jpg?t=1777351016', 
