@@ -3,6 +3,10 @@ import PrimeiroVideo from "../../assets/images/notas/PrimeiroVideo.png";
 
 export const notes = [
   {
+    date: "11 de julho 2026",
+    text: "terminei com a garota ontem e hj ela postou status flertando com alguém, parece que é algo de tempos então a minha suspeita não estava tão errada... bem, é irrelevante, hoje foi um dia divertido, fui ver o pessoal da Melts e fui em um evento de jogos retro com um amigo"
+  },
+  {
     date: "05 de julho 2026",
     text: "ahooy, zerei o primeiro resident evil usando a Jill, mas eu tenho que ver se surge a coragem na platina..."
   },
