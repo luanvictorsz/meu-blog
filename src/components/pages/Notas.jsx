@@ -3,6 +3,11 @@ import PrimeiroVideo from "../../assets/images/notas/PrimeiroVideo.png";
 
 export const notes = [
   {
+    date: "18 de julho 2026",
+    text: "estou sozinho em casa desde o dia 9, minha mãe e irmão estão de ferias, tem sido uma semana bem conturbada mas está sendo divertido estar sozinho",
+    text: "um dos pontos positivos é que a casa está arrumada, posso tomar meu vinho em paz e escutar Sade em som alto, aproveitei e lavei as roupas hoje, fui ao shopping e encontrei filmantos de ótima qualidade."
+  },
+  {
     date: "11 de julho 2026",
     text: "terminei com a garota ontem e hj ela postou status flertando com alguém, parece que é algo de tempos então a minha suspeita não estava tão errada... bem, é irrelevante, hoje foi um dia divertido, fui ver o pessoal da Melts e fui em um evento de jogos retro com um amigo"
   },
