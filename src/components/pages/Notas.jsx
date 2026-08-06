@@ -60,7 +60,7 @@ export const notes = [
   },
   {
     date: "23 de maio 2026",
-    text: "fix a pintura da espada da minha namorada e de alguns outros modelos em 3D que eu havia feito"
+    text: "fiz a pintura da espada da minha namorada e de alguns outros modelos em 3D que eu havia feito"
   },
   {
     date: "16 maio 2026",
