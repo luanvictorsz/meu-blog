@@ -2,6 +2,10 @@ import { useState } from "react";
 import PrimeiroVideo from "../../assets/images/notas/PrimeiroVideo.png";
 
 export const notes = [
+  { 
+    date: "2 de Agosto 2026",
+    text: "comprei um apartamento... EU COMPREI UM APARTAMENTO, ok que ainda está na planta, mas é meu e está proximo do rooftop e é em tamanduatei, fica mais proximo de tudo (a entrega está prevista para 2028), estou muito feliz, finalmente vou ter meu cantinho, e o melhor é que vou poder decorar do meu jeito, e vai ser um apartamento grande, com 3 quartos, 2 banheiros e uma cozinha grande, estou muito feliz mesmo" 
+  },
   {
     date: "18 de julho 2026",
     text: "estou sozinho em casa desde o dia 9, minha mãe e irmão estão de ferias, tem sido uma semana bem conturbada mas está sendo divertido estar sozinho, um dos pontos positivos é que a casa está arrumada, posso tomar meu vinho em paz e escutar Sade em som alto, aproveitei e lavei as roupas hoje, fui ao shopping e encontrei filamentos de ótima qualidade."
