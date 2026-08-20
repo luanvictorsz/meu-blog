@@ -3,6 +3,10 @@ import PrimeiroVideo from "../../assets/images/notas/PrimeiroVideo.png";
 
 export const notes = [
   {
+    data: "19 de agosto 2026",
+    text: "voltando a criar projetos de jogos, fiz alguns assets lowpoly em 3D e publiquei no sketchfab, provavelmente tem o link do meu perfil aqui no blog."
+  },
+  {
     data: "15 de agosto 2026",
     "text": "fui com o pessoal para a casa do Pedro para uma tarde de jogos e lanches, o frango frito estava maravilhoso e nos jogamos worms."
   },
