@@ -3,12 +3,16 @@ import PrimeiroVideo from "../../assets/images/notas/PrimeiroVideo.png";
 
 export const notes = [
   {
-    date: "05 de agosto 2026",
-    text: "gravei um video criando um jogo para o youtube, ainda preciso editar e isso vai ser trabalhoso, estou com muitos planos para em breve"
+    data: "15 de agosto 2026",
+    "text": "fui com o pessoal para a casa do Pedro para uma tarde de jogos e lanches, o frango frito estava maravilhoso e nos jogamos worms."
   },
   { 
     date: "2 de Agosto 2026",
-    text: "comprei um apartamento... EU COMPREI UM APARTAMENTO, ok que ainda está na planta, mas é meu e está proximo do rooftop e é em tamanduatei, fica mais proximo de tudo (a entrega está prevista para 2028), estou muito feliz, finalmente vou ter meu cantinho, e o melhor é que vou poder decorar do meu jeito, e vai ser um apartamento grande, com 3 quartos, 2 banheiros e uma cozinha grande, estou muito feliz mesmo" 
+    text: "comprei um apartamento... EU COMPREI UM APARTAMENTO, ok que ainda está na planta, mas é meu e está proximo do rooftop e é em tamanduatei, fica mais proximo de tudo (a entrega está prevista para 2028), estou muito feliz, finalmente vou ter meu cantinho, e o melhor é que vou poder decorar do meu jeito, ah e desci de tirolesa tambem... foi um ótimo começo de ferias" 
+  },
+  {
+    data: "1 de agosto 2026",
+    text: "virando mais um sabado a noite com a Lilith em um bar na liberdade depois de um dia cheio experimentando comidas asiaticas, bom... foi divertido."
   },
   {
     date: "18 de julho 2026",
